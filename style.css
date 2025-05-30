@@ -1,0 +1,94 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('image/fcfootballfield.jpg'); 
+  background-size: cover;                 /* Ensures full coverage */
+  background-repeat: no-repeat;           /* Prevents tiling */
+  background-position: center center;     /* Centered */
+  background-attachment: fixed; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: #fff;
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);*/ 
+}
+
+
+h1 {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+#matches {
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+}
+
+#matches h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1em;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+li:hover {
+  background-color: #fff8af;
+  transform: scale(1.02);
+}
+
+
+.team-names {
+  font-weight: bold;
+  color: #985ae98b;
+}
+
+.match-time {
+  font-style: italic;
+  color: #023561;
+}
+
+
+#matches.loading {
+  text-align: center;
+  font-size: 1.2em;
+  color: #b0be35;
+}
+
+#matches.failed {
+  text-align: center;
+  font-size: 1.2em;
+  color: #dc3545;
+}
